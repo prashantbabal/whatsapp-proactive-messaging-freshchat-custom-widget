@@ -1,0 +1,5 @@
+coverage
+dist
+log
+.fdk
+.report.json

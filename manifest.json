@@ -1,0 +1,28 @@
+{
+  "platform-version": "2.3",
+  "product": {
+    "freshchat": {
+      "location": {
+        "conversation_user_info": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      },
+      "requests": {
+        "sendWhatsappTemplate": {},
+        "filterUsersByPhone": {},
+        "createUser": {},
+        "getUserById": {},
+        "getConversationsByUserId": {},
+        "getConversationMessages": {},
+        "sendMessageToConversation": {},
+        "sendMessageToNewConversation": {},
+        "filterUsersByFirstName": {}
+      }
+    }
+  },
+  "engines": {
+    "node": "18.20.0",
+    "fdk": "9.0.8"
+  }
+}

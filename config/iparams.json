@@ -1,0 +1,57 @@
+{
+    "apiKey": {
+        "display_name": "Freshchat API Key",
+        "description": "Please enter your api_key",
+        "type": "api_key",
+        "secure": true,
+        "required": true,
+        "type_attributes": {
+            "product": "freshchat"
+        }
+    },
+    "domain": {
+        "display_name": "Please enter your freshchat domain",
+        "description": "Eg. https://domain.freshchat.com",
+        "type": "domain",
+        "required": true,
+        "type_attributes": {
+            "product": "freshchat"
+        }
+    },
+    "messaging_numbers": {
+        "display_name": "Whatsapp connected numbers",
+        "description": "Please enter multiple integrated numbers to send proactive messages separated by double pipe symbol- Example +123456789000||+919876543210",
+        "type": "text",
+        "required": true
+    },
+    "namespace": {
+        "display_name": "Whatsapp Namespace",
+        "description": "Please enter the namespace for the whatsapp channel",
+        "type": "text",
+        "required": true
+    },
+    "channel_id": {
+        "display_name": "Whatsapp Channel Id",
+        "description": "Whatsapp Channel Id to be connected with new conversations created by this widget",
+        "type": "text",
+        "required": false
+    },
+    "templates": {
+        "display_name": "Templates",
+        "description": "Please enter the templates for proactive messages separated by ||",
+        "type": "text",
+        "required": true
+    },
+    "placeholders": {
+        "display_name": "Placeholders",
+        "description": "Please enter the placeholders count for the templates above separated by ||",
+        "type": "text",
+        "required": true
+    },
+    "templateContents": {
+        "display_name": "Template Contents",
+        "description": "Please enter the template contents for the templates above separated by ||",
+        "type": "paragraph",
+        "required": true
+    }
+}

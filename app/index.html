@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="{{{appclient}}}"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/css/crayons-min.css"
+    />
+  </head>
+  <body>
+      <div>
+        <div id="form-container">
+          <fw-button id="submit">Send</fw-button>
+        </div>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"
+  ></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script type="module">
+    import * as Yup from 'https://cdn.skypack.dev/yup@0.32';
+    window.Yup = Yup;
+  </script>
+  <script src="scripts/form.js"></script>
+  <script src="scripts/apis.js"></script>
+  <script src="scripts/app.js"></script>
+</html>

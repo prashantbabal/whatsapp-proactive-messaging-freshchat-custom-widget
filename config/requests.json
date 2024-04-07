@@ -1,0 +1,101 @@
+{
+    "sendWhatsappTemplate": {
+        "schema": {
+            "method": "POST",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/outbound-messages/whatsapp",
+            "headers": {
+                "Authorization" : "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    },
+    "filterUsersByPhone": {
+        "schema": {
+            "method": "GET",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/users?phone_no=<%= context.phone %>",
+            "headers": {
+                "Authorization" : "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    },
+    "filterUsersByFirstName": {
+        "schema": {
+            "method": "GET",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/users?first_name=<%= context.firstName %>",
+            "headers": {
+                "Authorization" : "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    },
+    "createUser": {
+        "schema": {
+            "method": "POST",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/users",
+            "headers": {
+                "Authorization" : "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    },
+    "getUserById": {
+        "schema": {
+            "method": "GET",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/users/<%= context.userId %>",
+            "headers": {
+                "Authorization" : "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    },
+    "getConversationsByUserId": {
+        "schema": {
+            "method": "GET",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/users/<%= context.userId %>/conversations",
+            "headers": {
+                "Authorization" : "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    },
+    "getConversationMessages": {
+        "schema": {
+            "method": "GET",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/conversations/<%= context.conversationId %>/messages",
+            "headers": {
+                "Authorization": "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    },
+    "sendMessageToConversation": {
+        "schema": {
+            "method": "POST",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/conversations/<%= context.conversationId %>/messages",
+            "headers": {
+                "Authorization" : "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    },
+    "sendMessageToNewConversation": {
+        "schema": {
+            "method": "POST",
+            "host": "<%= iparam.domain %>.freshchat.com",
+            "path": "/v2/conversations",
+            "headers": {
+                "Authorization" : "Bearer <%= iparam.apiKey %>",
+                "Content-Type": "application/json"
+            }
+        }
+    }
+}
